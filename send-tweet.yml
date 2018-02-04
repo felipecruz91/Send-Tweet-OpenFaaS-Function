@@ -1,0 +1,14 @@
+provider:
+  name: faas
+  gateway: http://<RASPBERRY_IP_ADDR>:8080
+
+functions:
+  send-tweet:
+    lang: python-armhf
+    handler: ./send-tweet
+    image: felipecruz/send-tweet
+    environment:
+        consumer_key: ""
+        consumer_secret: ""
+        access_token: ""
+        access_token_secret: ""
