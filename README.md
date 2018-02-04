@@ -4,6 +4,8 @@
 
 This is an OpenFaaS function written in Python that makes use of the `tweepy` library to send a tweet from your Twitter account. 
 
+![OpenFaaS Send Tweet function](docs/images/OpenFaaS-Send-Tweet.PNG)
+
 ## Set up
 
 1. You will need to specify your Twitter app environment variables in the `send-tweet.yml` file.
