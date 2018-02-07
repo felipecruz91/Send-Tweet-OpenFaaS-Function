@@ -22,3 +22,17 @@ If you do not have a Twitter App you can create one [here](https://apps.twitter.
 2. In the same file, you must set the gateway IP which should be your Raspberry Pi IP address.
 
 ` gateway: http://<RASPBERRY_IP_ADDR>:8080`
+
+## Build the function
+
+`faas-cli build -f ./send-tweet.yml`
+
+## Upload the function to a remote registry (optional)
+
+ Note: before pushing to the Docker Hub, please go to the `send-tweet.yml` file and in the `image` property change the value from `send-tweet` to include your Docker Hub account - i.e. `felipecruz/send-tweet`
+
+`faas-cli push -f ./send-tweet.yml`
+
+## Deploy the function
+
+`faas-cli deploy -f ./send-tweet.yml`
