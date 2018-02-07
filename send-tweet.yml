@@ -6,7 +6,7 @@ functions:
   send-tweet:
     lang: python-armhf
     handler: ./send-tweet
-    image: felipecruz/send-tweet
+    image: send-tweet
     environment:
         consumer_key: ""
         consumer_secret: ""
